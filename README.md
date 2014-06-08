@@ -19,7 +19,7 @@ nosetests
 
 `from_string` is mostly used in RSS Feed parsing where authors are sometimes embedded as bylines:
 
-```
+```python
 import lauteur
 
 string = 'By: Brian Abelson ,and Michael H. Keller & Dr. Stijn Debrouwere IV'
@@ -31,7 +31,7 @@ print authors
 
 `from_html` searches through common meta tags for authors.
 
-```
+```python
 import lauteur
 import requests
 
