@@ -7,8 +7,8 @@ import codecs
 try: 
   codecs.lookup('mbcs') 
 except LookupError: 
-  ascii = codecs.lookup('ascii') 
-  func = lambda name, enc=ascii: {True: enc}.get(name=='mbcs') 
+  utf8 = codecs.lookup('utf-8') 
+  func = lambda name, enc=utf8: {True: enc}.get(name=='mbcs') 
   codecs.register(func) 
 
 # install readme
@@ -26,7 +26,7 @@ required = [str(ir.req) for ir in parse_requirements("requirements.txt")]
 # setup
 setup(
   name='lauteur',
-  version='0.0.1',
+  version='0.0.0',
   description='Tools for ascribing authorship - to the chagrin of Barthes',
   long_description = long_description,
   classifiers=[
