@@ -16,7 +16,7 @@ readme = os.path.join(os.path.dirname(__file__), 'README.md')
 
 try:
   import pypandoc
-  long_description = pypandoc.convert(readme, 'rst')
+  long_description = pypandoc.convert(readme, 'rst', format='md')
 except (IOError, ImportError):
   long_description = ""
 
