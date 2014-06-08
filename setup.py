@@ -26,7 +26,7 @@ except (IOError, ImportError):
 # setup
 setup(
   name='lauteur',
-  version='0.0.5',
+  version='0.0.6',
   description='Tools for ascribing authorship - to the chagrin of Barthes',
   long_description = long_description,
   classifiers=[
