@@ -3,6 +3,7 @@ lauteur
 ======
 _Tools for ascribing authorship - to the chagrin of [Barthes](http://en.wikipedia.org/wiki/Death_of_the_Author)_
 
+**NOTE**: All functionality of this library has been improved upon and ported to [Newslynx V2](http://github.com/newslynx/newslynx), specifically [this module](https://github.com/newslynx/newslynx/blob/master/newslynx/lib/author.py).
 ## Install
 ```
 pip install lauteur
